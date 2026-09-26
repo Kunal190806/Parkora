@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PARKORA — Cover</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+:root {
+  --bg-page: #ECE7D8;
+  --bg-card: #F4F0E2;
+  --bg-soft: #FAF7EB;
+  --ink: #14253F;
+  --ink-2: #1B2330;
+  --ink-3: #4D5663;
+  --ink-4: #8E96A0;
+  --rule: rgba(20,37,63,0.18);
+  --rule-soft: rgba(20,37,63,0.10);
+  --accent: #F2C300;
+  --accent-2: #E0AE00;
+  --pos: #117373;
+  --warn: #B8655F;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; overflow: hidden; }
+</style>
+</head>
+<body>
+<div class="slide-container" data-screen-label="01 Cover" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-page); font-family:'IBM Plex Sans', sans-serif; color:var(--ink-2);">
+
+  <!-- corner registration marks -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:60px; top:60px; width:36px; height:36px; z-index:2;">
+    <svg viewBox="0 0 36 36" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><path d="M0 0 L36 0 L36 2 L2 2 L2 36 L0 36 Z" fill="#14253F"/></svg>
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1824px; top:60px; width:36px; height:36px; z-index:2;">
+    <svg viewBox="0 0 36 36" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><path d="M0 0 L36 0 L36 36 L34 36 L34 2 L0 2 Z" fill="#14253F"/></svg>
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:60px; top:984px; width:36px; height:36px; z-index:2;">
+    <svg viewBox="0 0 36 36" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><path d="M0 0 L2 0 L2 34 L36 34 L36 36 L0 36 Z" fill="#14253F"/></svg>
+  </div>
+
+  <!-- top-right meta strip -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1548px; top:80px; width:296px; z-index:10; font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.18em; color:var(--ink-3); text-align:right; text-transform:uppercase;">
+    PARKORA · v0.1
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1756px; top:104px; width:88px; height:2px; background:var(--accent); z-index:2;"></div>
+
+  <!-- subtle background dot grid upper-right -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1280px; top:160px; width:520px; height:300px; z-index:1; opacity:0.55;">
+    <svg viewBox="0 0 520 300" width="520" height="300" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#14253F" fill-opacity="0.10">
+        <!-- grid of dots -->
+      </g>
+      <pattern id="dotgrid" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+        <circle cx="2" cy="2" r="1.4" fill="#14253F" fill-opacity="0.18"/>
+      </pattern>
+      <rect x="0" y="0" width="520" height="300" fill="url(#dotgrid)"/>
+    </svg>
+  </div>
+
+  <!-- eyebrow -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:248px; z-index:10; font-family:'JetBrains Mono', monospace; font-size:18px; letter-spacing:0.32em; color:var(--ink); text-transform:uppercase; font-weight:500;">
+    <span style="display:inline-block; width:48px; height:2px; background:var(--accent); vertical-align:middle; margin-right:18px;"></span>Mini Project · Engineering Brief
+  </div>
+
+  <!-- hero title -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:300px; width:1280px; z-index:10;">
+    <h1 style="margin:0; font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:240px; line-height:0.92; letter-spacing:-0.03em; color:var(--ink);">
+      PARKORA
+    </h1>
+  </div>
+
+  <!-- yellow bar + subtitle -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:600px; width:90px; height:6px; background:var(--accent); z-index:2;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:626px; width:1320px; z-index:10;">
+    <p style="margin:0; font-family:'Space Grotesk', sans-serif; font-weight:500; font-size:42px; line-height:1.18; color:var(--ink); letter-spacing:-0.005em;">
+      Smart IoT-Based Parking Management System
+    </p>
+  </div>
+
+  <!-- hairline above detail rows -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:780px; width:1680px; height:1px; background:var(--rule); z-index:2;"></div>
+
+  <!-- detail row 1 -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:812px; width:300px; z-index:10;">
+    <div style="font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.22em; color:var(--ink-3); text-transform:uppercase; margin-bottom:18px;">Team Members</div>
+    <div style="font-family:'IBM Plex Sans', sans-serif; font-size:24px; color:var(--ink-2); line-height:1.3;">[Your Names] / [Roll Numbers]</div>
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:462px; top:812px; width:1px; height:120px; background:var(--rule); z-index:2;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:512px; top:812px; width:520px; z-index:10;">
+    <div style="font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.22em; color:var(--ink-3); text-transform:uppercase; margin-bottom:18px;">Department</div>
+    <div style="font-family:'IBM Plex Sans', sans-serif; font-size:24px; color:var(--ink-2); line-height:1.3;">Electronics &amp; Telecommunication Engineering</div>
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1064px; top:812px; width:1px; height:120px; background:var(--rule); z-index:2;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1116px; top:812px; width:340px; z-index:10;">
+    <div style="font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.22em; color:var(--ink-3); text-transform:uppercase; margin-bottom:18px;">College</div>
+    <div style="font-family:'IBM Plex Sans', sans-serif; font-size:24px; color:var(--ink-2); line-height:1.3;">[Your College Name]</div>
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1488px; top:812px; width:1px; height:120px; background:var(--rule); z-index:2;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1540px; top:812px; width:300px; z-index:10;">
+    <div style="font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.22em; color:var(--ink-3); text-transform:uppercase; margin-bottom:18px;">Academic Year</div>
+    <div style="font-family:'IBM Plex Sans', sans-serif; font-size:24px; color:var(--ink-2); font-family:'Space Grotesk', sans-serif; font-weight:600; line-height:1.3;">2026&ndash;27</div>
+  </div>
+
+  <!-- bottom-right page indicator -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1824px; top:996px; width:60px; z-index:10; font-family:'JetBrains Mono', monospace; font-size:14px; letter-spacing:0.18em; color:var(--ink-3); text-align:right;">
+    01
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1740px; top:1004px; width:72px; height:2px; background:var(--ink); z-index:2;"></div>
+</div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

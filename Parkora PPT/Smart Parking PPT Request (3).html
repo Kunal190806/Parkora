@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PARKORA — How PARKORA Works</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+  --bg-page: #ECE7D8;
+  --bg-card: #F4F0E2;
+  --bg-soft: #FAF7EB;
+  --ink: #14253F;
+  --ink-2: #1B2330;
+  --ink-3: #4D5663;
+  --ink-4: #8E96A0;
+  --rule: rgba(20,37,63,0.18);
+  --rule-soft: rgba(20,37,63,0.10);
+  --accent: #F2C300;
+  --accent-2: #E0AE00;
+  --pos: #117373;
+  --warn: #B8655F;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; overflow: hidden; }
+</style>
+</head>
+<body>
+<div class="slide-container" data-screen-label="05 How PARKORA Works" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-page); font-family:'IBM Plex Sans', sans-serif; color:var(--ink-2);">
+
+  <!-- title -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:96px; z-index:10; font-family:'JetBrains Mono', monospace; font-size:14px; letter-spacing:0.30em; color:var(--ink-3); text-transform:uppercase;">
+    05 — Operation
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:130px; width:56px; height:3px; background:var(--accent); z-index:2;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:158px; width:1480px; z-index:10;">
+    <h1 style="margin:0; font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:80px; line-height:1; letter-spacing:-0.02em; color:var(--ink);">How PARKORA Works</h1>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:262px; width:1480px; z-index:10; font-family:'IBM Plex Sans', sans-serif; font-size:24px; color:var(--ink-3); line-height:1.4;">
+    A multi-layered IoT ecosystem forming a single feedback loop from individual slots to operational staff.
+  </div>
+
+  <!-- flow container -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:80px; top:380px; width:1760px; height:380px; background:var(--bg-card); border:1px solid var(--rule); z-index:1;"></div>
+
+  <!-- baseline connector line -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:220px; top:560px; width:1480px; height:2px; background:var(--ink); z-index:2;"></div>
+
+  <!-- Stage 1: SENSE -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:180px; top:480px; width:160px; height:160px; border-radius:50%; background:var(--ink); z-index:3;"></div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:180px; top:480px; width:160px; height:160px; border-radius:50%; border:2px solid var(--accent); z-index:4;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:180px; top:528px; width:160px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:26px; letter-spacing:0.20em; color:var(--accent); text-transform:uppercase;">Sense</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:660px; width:280px; z-index:10; text-align:center;">
+    <div style="font-family:'IBM Plex Sans', sans-serif; font-size:22px; color:var(--ink); font-weight:500;">Slot Sensors</div>
+    <div style="margin-top:6px; font-family:'JetBrains Mono', monospace; font-size:14px; letter-spacing:0.16em; color:var(--ink-3); text-transform:uppercase;">IR detection</div>
+  </div>
+
+  <!-- arrow 1 -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:348px; top:548px; width:200px; height:24px; z-index:3;">
+    <svg viewBox="0 0 200 24" width="200" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12 L186 12 M174 4 L186 12 L174 20" stroke="#14253F" stroke-width="2.5" fill="none" stroke-linecap="square"/></svg>
+  </div>
+
+  <!-- Stage 2: PROCESS -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:560px; top:480px; width:160px; height:160px; border-radius:50%; background:var(--bg-soft); border:3px solid var(--ink); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:560px; top:528px; width:160px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:26px; letter-spacing:0.20em; color:var(--ink); text-transform:uppercase;">Process</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:500px; top:660px; width:280px; z-index:10; text-align:center;">
+    <div style="font-family:'IBM Plex Sans', sans-serif; font-size:22px; color:var(--ink); font-weight:500;">ESP32 Node</div>
+    <div style="margin-top:6px; font-family:'JetBrains Mono', monospace; font-size:14px; letter-spacing:0.16em; color:var(--ink-3); text-transform:uppercase;">local MCU</div>
+  </div>
+
+  <!-- arrow 2 -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:728px; top:548px; width:200px; height:24px; z-index:3;">
+    <svg viewBox="0 0 200 24" width="200" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12 L186 12 M174 4 L186 12 L174 20" stroke="#14253F" stroke-width="2.5" fill="none" stroke-linecap="square"/></svg>
+  </div>
+
+  <!-- Stage 3: SYNC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:940px; top:480px; width:160px; height:160px; border-radius:50%; background:var(--accent); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:940px; top:528px; width:160px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:26px; letter-spacing:0.20em; color:var(--ink); text-transform:uppercase;">Sync</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:880px; top:660px; width:280px; z-index:10; text-align:center;">
+    <div style="font-family:'IBM Plex Sans', sans-serif; font-size:22px; color:var(--ink); font-weight:500;">Backend / DB</div>
+    <div style="margin-top:6px; font-family:'JetBrains Mono', monospace; font-size:14px; letter-spacing:0.16em; color:var(--ink-3); text-transform:uppercase;">centralized</div>
+  </div>
+
+  <!-- arrow 3 -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1108px; top:548px; width:200px; height:24px; z-index:3;">
+    <svg viewBox="0 0 200 24" width="200" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12 L186 12 M174 4 L186 12 L174 20" stroke="#14253F" stroke-width="2.5" fill="none" stroke-linecap="square"/></svg>
+  </div>
+
+  <!-- Stage 4: DISPLAY -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1320px; top:480px; width:160px; height:160px; border-radius:50%; background:var(--bg-soft); border:3px solid var(--ink); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1320px; top:528px; width:160px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:26px; letter-spacing:0.20em; color:var(--ink); text-transform:uppercase;">Display</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1260px; top:660px; width:280px; z-index:10; text-align:center;">
+    <div style="font-family:'IBM Plex Sans', sans-serif; font-size:22px; color:var(--ink); font-weight:500;">Dashboard</div>
+    <div style="margin-top:6px; font-family:'JetBrains Mono', monospace; font-size:14px; letter-spacing:0.16em; color:var(--ink-3); text-transform:uppercase;">operator view</div>
+  </div>
+
+  <!-- arrow 4 -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1488px; top:548px; width:200px; height:24px; z-index:3;">
+    <svg viewBox="0 0 200 24" width="200" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12 L186 12 M174 4 L186 12 L174 20" stroke="#14253F" stroke-width="2.5" fill="none" stroke-linecap="square"/></svg>
+  </div>
+
+  <!-- small Protocol labels under arrows -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:380px; top:520px; width:140px; z-index:5; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.16em; color:var(--ink-3); text-align:center;">digital I/O</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:760px; top:520px; width:140px; z-index:5; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.16em; color:var(--ink-3); text-align:center;">Wi-Fi / MQTT</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1140px; top:520px; width:140px; z-index:5; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.16em; color:var(--ink-3); text-align:center;">REST / query</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1520px; top:520px; width:160px; z-index:5; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.16em; color:var(--ink-3); text-align:center;">live update</div>
+
+  <!-- Stage 5: GUIDE (separate section, right side, with curve leading to it from Stage 4) -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1700px; top:480px; width:120px; height:160px; background:var(--ink); z-index:3;"></div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1700px; top:480px; width:120px; height:6px; background:var(--accent); z-index:4;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1700px; top:528px; width:120px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:22px; letter-spacing:0.20em; color:var(--accent); text-transform:uppercase;">Guide</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1660px; top:660px; width:200px; z-index:10; text-align:center;">
+    <div style="font-family:'IBM Plex Sans', sans-serif; font-size:22px; color:var(--ink); font-weight:500;">Security Guard</div>
+    <div style="margin-top:6px; font-family:'JetBrains Mono', monospace; font-size:14px; letter-spacing:0.16em; color:var(--ink-3); text-transform:uppercase;">directs driver</div>
+  </div>
+
+  <!-- bottom callout -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:830px; width:1680px; height:1px; background:var(--rule); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:870px; width:1680px; z-index:10; text-align:center;">
+    <p style="margin:0; font-family:'IBM Plex Sans', sans-serif; font-size:24px; line-height:1.5; color:var(--ink-2);">
+      Each cycle is closed in the dashboard &mdash; status flows from physical slot back to operator action.
+    </p>
+  </div>
+
+  <!-- page indicator -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1820px; top:996px; width:60px; z-index:10; font-family:'JetBrains Mono', monospace; font-size:14px; letter-spacing:0.18em; color:var(--ink-3); text-align:right;">
+    05
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1732px; top:1004px; width:78px; height:2px; background:var(--ink); z-index:2;"></div>
+</div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

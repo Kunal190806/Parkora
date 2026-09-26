@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PARKORA — Security Dashboard</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+  --bg-page: #ECE7D8;
+  --bg-card: #F4F0E2;
+  --bg-soft: #FAF7EB;
+  --ink: #14253F;
+  --ink-2: #1B2330;
+  --ink-3: #4D5663;
+  --ink-4: #8E96A0;
+  --rule: rgba(20,37,63,0.18);
+  --rule-soft: rgba(20,37,63,0.10);
+  --accent: #F2C300;
+  --accent-2: #E0AE00;
+  --pos: #117373;
+  --warn: #B8655F;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; overflow: hidden; }
+</style>
+</head>
+<body>
+<div class="slide-container" data-screen-label="10 Security Dashboard" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-page); font-family:'IBM Plex Sans', sans-serif; color:var(--ink-2);">
+
+  <!-- title -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:96px; z-index:10; font-family:'JetBrains Mono', monospace; font-size:14px; letter-spacing:0.30em; color:var(--ink-3); text-transform:uppercase;">
+    10 — Dashboard
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:130px; width:56px; height:3px; background:var(--accent); z-index:2;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:158px; width:1480px; z-index:10;">
+    <h1 style="margin:0; font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:80px; line-height:1; letter-spacing:-0.02em; color:var(--ink);">Security / Admin Dashboard</h1>
+  </div>
+
+  <!-- top-right DEMO chip -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1624px; top:160px; width:200px; height:36px; background:var(--accent); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1624px; top:166px; width:200px; z-index:10; text-align:center;">
+    <span style="font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.20em; color:var(--ink); text-transform:uppercase;">Prototype Demo Data</span>
+  </div>
+
+  <!-- main dash container -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:80px; top:240px; width:1760px; height:780px; background:var(--bg-card); border:1px solid var(--rule); z-index:1;"></div>
+
+  <!-- header bar (inside dashboard) -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:80px; top:240px; width:1760px; height:84px; background:var(--ink); z-index:2;"></div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:80px; top:240px; width:1760px; height:3px; background:var(--accent); z-index:3;"></div>
+
+  <!-- system label -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:262px; z-index:10; font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.24em; color:var(--accent); text-transform:uppercase;">
+    parkora_system_live
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:288px; z-index:10;">
+    <div style="display:inline-block; width:8px; height:8px; background:var(--pos); border-radius:50%; vertical-align:middle; margin-right:8px;"></div>
+    <span style="font-family:'IBM Plex Sans', sans-serif; font-size:18px; color:#ECE7D8; vertical-align:middle;">Live</span>
+  </div>
+
+  <!-- stat tile: TOTAL -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1180px; top:254px; width:160px; z-index:10; text-align:center;">
+    <div style="font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.20em; color:#B0B7BE; text-transform:uppercase; margin-bottom:6px;">Total Slots</div>
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:42px; color:#ECE7D8;">16</div>
+  </div>
+
+  <!-- stat tile: AVAILABLE -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1380px; top:254px; width:160px; z-index:10; text-align:center;">
+    <div style="font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.20em; color:#B0B7BE; text-transform:uppercase; margin-bottom:6px;">Available</div>
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:42px; color:var(--pos);">10</div>
+  </div>
+
+  <!-- stat tile: OCCUPIED -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1580px; top:254px; width:160px; z-index:10; text-align:center;">
+    <div style="font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.20em; color:#B0B7BE; text-transform:uppercase; margin-bottom:6px;">Occupied</div>
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:42px; color:var(--warn);">06</div>
+  </div>
+
+  <!-- floor label -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:368px; z-index:10;">
+    <span style="font-family:'JetBrains Mono', monospace; font-size:14px; letter-spacing:0.22em; color:var(--ink); text-transform:uppercase; font-weight:600;">FLOOR_01</span>
+    <span style="font-family:'IBM Plex Sans', sans-serif; font-size:18px; color:var(--ink-3); margin-left:14px;">(Section A &amp; Section B)</span>
+  </div>
+
+  <!-- slot grid: 2 rows x 8 cols, each cell 130x110, gap 14 -->
+  <!-- Row A -->
+  <!-- A-01 OCC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:420px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--warn); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:470px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--warn);">A-01</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:498px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--warn); text-transform:uppercase;">occupied</div>
+
+  <!-- A-02 VAC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:264px; top:420px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--pos); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:264px; top:470px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--pos);">A-02</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:264px; top:498px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--pos); text-transform:uppercase;">vacant</div>
+
+  <!-- A-03 VAC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:408px; top:420px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--pos); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:408px; top:470px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--pos);">A-03</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:408px; top:498px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--pos); text-transform:uppercase;">vacant</div>
+
+  <!-- A-04 OCC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:552px; top:420px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--warn); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:552px; top:470px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--warn);">A-04</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:552px; top:498px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--warn); text-transform:uppercase;">occupied</div>
+
+  <!-- A-05 VAC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:696px; top:420px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--pos); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:696px; top:470px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--pos);">A-05</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:696px; top:498px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--pos); text-transform:uppercase;">vacant</div>
+
+  <!-- A-06 VAC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:840px; top:420px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--pos); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:840px; top:470px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--pos);">A-06</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:840px; top:498px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--pos); text-transform:uppercase;">vacant</div>
+
+  <!-- A-07 VAC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:984px; top:420px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--pos); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:984px; top:470px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--pos);">A-07</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:984px; top:498px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--pos); text-transform:uppercase;">vacant</div>
+
+  <!-- A-08 VAC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1128px; top:420px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--pos); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1128px; top:470px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--pos);">A-08</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1128px; top:498px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--pos); text-transform:uppercase;">vacant</div>
+
+  <!-- Row B -->
+  <!-- B-01 VAC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:548px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--pos); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:598px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--pos);">B-01</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:626px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--pos); text-transform:uppercase;">vacant</div>
+
+  <!-- B-02 VAC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:264px; top:548px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--pos); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:264px; top:598px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--pos);">B-02</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:264px; top:626px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--pos); text-transform:uppercase;">vacant</div>
+
+  <!-- B-03 OCC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:408px; top:548px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--warn); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:408px; top:598px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--warn);">B-03</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:408px; top:626px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--warn); text-transform:uppercase;">occupied</div>
+
+  <!-- B-04 VAC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:552px; top:548px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--pos); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:552px; top:598px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--pos);">B-04</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:552px; top:626px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--pos); text-transform:uppercase;">vacant</div>
+
+  <!-- B-05 OCC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:696px; top:548px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--warn); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:696px; top:598px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--warn);">B-05</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:696px; top:626px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--warn); text-transform:uppercase;">occupied</div>
+
+  <!-- B-06 OCC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:840px; top:548px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--warn); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:840px; top:598px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--warn);">B-06</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:840px; top:626px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--warn); text-transform:uppercase;">occupied</div>
+
+  <!-- B-07 OCC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:984px; top:548px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--warn); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:984px; top:598px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--warn);">B-07</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:984px; top:626px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--warn); text-transform:uppercase;">occupied</div>
+
+  <!-- B-08 VAC -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1128px; top:548px; width:130px; height:110px; background:var(--bg-soft); border:2px solid var(--pos); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1128px; top:598px; width:130px; z-index:10; text-align:center;">
+    <div style="font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; color:var(--pos);">B-08</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1128px; top:626px; width:130px; z-index:10; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; color:var(--pos); text-transform:uppercase;">vacant</div>
+
+  <!-- RIGHT column event log -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1316px; top:368px; width:484px; height:600px; background:var(--ink); z-index:2;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1352px; top:392px; z-index:10; font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.24em; color:var(--accent); text-transform:uppercase;">
+    Live Event Log
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1352px; top:422px; width:48px; height:2px; background:var(--accent); z-index:3;"></div>
+
+  <!-- events -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1352px; top:452px; width:420px; z-index:10; font-family:'IBM Plex Sans', sans-serif; font-size:17px; line-height:2.0;">
+    <span style="color:#B0B7BE; font-family:'JetBrains Mono', monospace; font-size:14px;">10:45:02</span> <span style="color:#ECE7D8;">&middot; Slot B03 &rarr; </span><span style="color:var(--warn); font-weight:600;">OCCUPIED</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1352px; top:498px; width:420px; z-index:10; font-family:'IBM Plex Sans', sans-serif; font-size:17px; line-height:2.0;">
+    <span style="color:#B0B7BE; font-family:'JetBrains Mono', monospace; font-size:14px;">10:44:58</span> <span style="color:#ECE7D8;">&middot; Slot A07 &rarr; </span><span style="color:var(--pos); font-weight:600;">VACANT</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1352px; top:544px; width:420px; z-index:10; font-family:'IBM Plex Sans', sans-serif; font-size:17px; line-height:2.0;">
+    <span style="color:#B0B7BE; font-family:'JetBrains Mono', monospace; font-size:14px;">10:43:15</span> <span style="color:#ECE7D8;">&middot; Slot A01 &rarr; </span><span style="color:var(--warn); font-weight:600;">OCCUPIED</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1352px; top:590px; width:420px; z-index:10; font-family:'IBM Plex Sans', sans-serif; font-size:17px; line-height:2.0;">
+    <span style="color:#B0B7BE; font-family:'JetBrains Mono', monospace; font-size:14px;">10:42:50</span> <span style="color:#ECE7D8;">&middot; Slot A04 &rarr; </span><span style="color:var(--warn); font-weight:600;">OCCUPIED</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1352px; top:636px; width:420px; z-index:10; font-family:'IBM Plex Sans', sans-serif; font-size:17px; line-height:2.0;">
+    <span style="color:#B0B7BE; font-family:'JetBrains Mono', monospace; font-size:14px;">10:42:10</span> <span style="color:#ECE7D8;">&middot; System check &rarr; </span><span style="color:var(--accent); font-weight:600;">ALL OK</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1352px; top:682px; width:420px; z-index:10; font-family:'IBM Plex Sans', sans-serif; font-size:17px; line-height:2.0;">
+    <span style="color:#B0B7BE; font-family:'JetBrains Mono', monospace; font-size:14px;">10:41:33</span> <span style="color:#ECE7D8;">&middot; Slot B05 &rarr; </span><span style="color:var(--warn); font-weight:600;">OCCUPIED</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1352px; top:728px; width:420px; z-index:10; font-family:'IBM Plex Sans', sans-serif; font-size:17px; line-height:2.0;">
+    <span style="color:#B0B7BE; font-family:'JetBrains Mono', monospace; font-size:14px;">10:41:02</span> <span style="color:#ECE7D8;">&middot; Slot B06 &rarr; </span><span style="color:var(--warn); font-weight:600;">OCCUPIED</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1352px; top:774px; width:420px; z-index:10; font-family:'IBM Plex Sans', sans-serif; font-size:17px; line-height:2.0;">
+    <span style="color:#B0B7BE; font-family:'JetBrains Mono', monospace; font-size:14px;">10:40:31</span> <span style="color:#ECE7D8;">&middot; Slot B07 &rarr; </span><span style="color:var(--warn); font-weight:600;">OCCUPIED</span>
+  </div>
+
+  <!-- legend -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1352px; top:880px; width:14px; height:14px; border:2px solid var(--pos); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1376px; top:876px; z-index:10; font-family:'IBM Plex Sans', sans-serif; font-size:18px; color:#ECE7D8;">vacant</div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1480px; top:880px; width:14px; height:14px; border:2px solid var(--warn); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1504px; top:876px; z-index:10; font-family:'IBM Plex Sans', sans-serif; font-size:18px; color:#ECE7D8;">occupied</div>
+
+  <!-- page indicator -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1820px; top:1042px; width:60px; z-index:10; font-family:'JetBrains Mono', monospace; font-size:14px; letter-spacing:0.18em; color:var(--ink-3); text-align:right;">
+    10
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1732px; top:1050px; width:78px; height:2px; background:var(--ink); z-index:2;"></div>
+</div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

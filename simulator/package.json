@@ -1,0 +1,16 @@
+{
+  "name": "simulator",
+  "version": "1.0.0",
+  "main": "sensor-simulator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^18.0.3",
+    "mqtt": "^5.16.0"
+  }
+}

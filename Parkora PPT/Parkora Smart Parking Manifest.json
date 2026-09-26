@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "format": "html",
+  "metadata": {
+    "title": "PARKORA — Smart IoT-Based Parking Management System",
+    "description": "Engineering project deck for PARKORA, a smart parking management system. Off-white + navy + yellow engineering theme.",
+    "author": ""
+  },
+  "canvas": {"width": 1920, "height": 1080},
+  "playlist": [
+    "cover.html",
+    "concept.html",
+    "problem.html",
+    "comparison.html",
+    "solution.html",
+    "objectives.html",
+    "architecture.html",
+    "stack.html",
+    "flow.html",
+    "dashboard.html",
+    "prototype.html",
+    "status.html"
+  ]
+}
